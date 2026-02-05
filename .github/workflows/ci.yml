@@ -98,6 +98,13 @@ jobs:
           pixi run setup
           pixi run build
 
+      - name: Check architecture (macOS)
+        working-directory: ${{ env.PROGRAM_NAME }}/bin
+        if: runner.os == 'macOS'
+        run: |
+          otool -L mflgr
+          lipo -info mflgr
+
       - name: Show build log
         if: failure()
         working-directory: ${{ env.PROGRAM_NAME }}
