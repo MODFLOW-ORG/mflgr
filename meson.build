@@ -16,6 +16,13 @@ cc_id = cc.get_id()
 message('Fortran Compiler ID:', fc_id)
 message('C Compiler ID:', cc_id)
 
+# Define _UF for C files to enable Fortran name mangling compatibility
+# On Unix/Linux: Fortran uses lowercase + trailing underscore
+# On Windows: Fortran uses uppercase without underscore (Intel default)
+if host_machine.system() != 'windows'
+  add_project_arguments('-D_UF', language: 'c')
+endif
+
 compile_args = []
 link_args = []
 extra_deps = []
