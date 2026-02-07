@@ -60,5 +60,7 @@ exe = executable(
                  'mflgr',
                  sources,
                  dependencies: extra_deps,
-                 install: true
+                 install: true,
+                 fortran_args: fc.get_supported_arguments(compile_args),
+                 link_language: 'fortran'
                 )
