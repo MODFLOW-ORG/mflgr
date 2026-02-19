@@ -12,3 +12,11 @@ LGR2 provides the capability to simulate groundwater flow using multiple block-s
 ### Report Citation
 
 Mehl, Steffen, and Hill, M.C., 2013, MODFLOW-LGR--Documentation of ghost node local grid refinement (LGR2) for multiple areas and the boundary flow and head (BFH2) package: U.S. Geological Survey Techniques and Methods, book 6, chap. A44, 43 p., https://doi.org/10.3133/tm6A44
+
+## Source
+
+Source code retrieved from https://water.usgs.gov/ogw/modflow-lgr/modflow-lgr-v2.0.0/mflgrv2_0_00.zip.
+
+## Disclaimer
+
+This repository is provided as a courtesy and is not actively maintained. Modifications to the original source may have been made. Use this resource at your own risk; it should be regarded as provisional and not as an authoritative substitute for the official software release by the original authors.
