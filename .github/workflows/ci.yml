@@ -1,4 +1,4 @@
-name: mflgr checks
+name: mflgr CI/CD
 on:
   # run at 6 AM UTC every day
   schedule:
@@ -18,7 +18,7 @@ env:
   PROGRAM_NAME: mflgr
 jobs:
   build:
-    name: Build and Test on ${{ matrix.os }} with ${{ matrix.compiler }} ${{ matrix.version }}
+    name: ${{ matrix.os }} with ${{ matrix.compiler }} ${{ matrix.version }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -181,7 +181,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: v${{ env.PROGRAM_VERSION }}
-          name: "${{ env.PROGRAM_NAME }} executables"
+          name: "${{ env.PROGRAM_NAME }}"
           artifacts: "${{ env.DIST }}/*"
           draft: false
           allowUpdates: true

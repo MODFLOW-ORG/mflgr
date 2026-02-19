@@ -1,6 +1,6 @@
 # MODFLOW-LGR
 
-[![mflgr checks](https://github.com/MODFLOW-ORG/mflgr/actions/workflows/ci.yml/badge.svg)](https://github.com/MODFLOW-ORG/mflgr/actions/workflows/ci.yml)
+[![mflgr CI/CD](https://github.com/MODFLOW-ORG/mflgr/actions/workflows/ci.yml/badge.svg)](https://github.com/MODFLOW-ORG/mflgr/actions/workflows/ci.yml)
 
 ## Overview of MODFLOW-LGR
 
